@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Quote Library</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="getQuote()">
+        <header>
+            <div class="logo">
+                <img src="i/logo.png">
+                <div>
+                    <p>Quote Library</p>
+                    <p class="caption">Created by Grimc0de</p>
+                </div>
+            </div>
+            <i class="fas fa-sun" onclick="changeMode()"></i>
+        </header>
+        <main>
+            <div class="quote-div">
+                <img src="i/space.png">
+                <div class="quote-box">
+                    <img src="i/space.png">
+                    <p id="quote"></p>
+                    <p id="author"></p>
+                </div>
+                <button onclick="getQuote()">Get quote</button>
+            </div>
+            <div class="banner">
+                <img class="space" src="i/space.png">
+                <img class="library" src="i/library.png">
+                <div>
+                    <h2>Welcome to the Quote Library</h2>
+                    <p>Click the "Get Quote" button to get your daily dose of insight from thounsands of randomly generated quotes!</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>This random quote generator was created by Grimc0de using the <a href="https://quote-garden.herokuapp.com/api/v3/quotes" target="_blank">Quote Garden API</a>.</p>
+            <div>
+                <a href="https://github.com/Gr1mc0de" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/grimc0de" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
